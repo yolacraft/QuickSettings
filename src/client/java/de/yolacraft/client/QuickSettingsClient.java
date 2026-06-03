@@ -19,5 +19,6 @@ public class QuickSettingsClient implements ClientModInitializer {
 				}
 			}
 		});
+
 	}
 }
