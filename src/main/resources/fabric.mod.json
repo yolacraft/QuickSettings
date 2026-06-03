@@ -1,0 +1,43 @@
+{
+	"schemaVersion": 1,
+	"id": "quicksettings",
+	"version": "${version}",
+	"name": "QuickSettings",
+	"description": "A Simple Minecraft Mod allowing you to mark important Settings an access them trough a separate UI!",
+	"authors": [
+		{
+			"name": "yolacraft",
+			"contact": {
+				"homepage": "https://github.com/yolacraft/"
+			}
+		}
+	],
+	"contact": {
+		"homepage": "https://github.com/yolacraft/",
+		"sources": "https://github.com/yolacraft/"
+	},
+	"license": "MIT",
+	"icon": "assets/quicksettings/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"de.yolacraft.QuickSettings"
+		],
+		"client": [
+			"de.yolacraft.client.QuickSettingsClient"
+		]
+	},
+	"mixins": [
+		"quicksettings.mixins.json",
+		{
+			"config": "quicksettings.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

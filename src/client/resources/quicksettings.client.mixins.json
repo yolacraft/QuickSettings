@@ -1,0 +1,25 @@
+{
+	"required": true,
+	"package": "de.yolacraft.client.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"client": [
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	},
+	"mixins": [
+		"vanilla.ContainerEntryClickMixin",
+		"gui.GamePauseScreenMixin",
+		"vanilla.OptionsListEntryMixin",
+		"reeses.ReecesFavoriteClickMixin",
+		"reeses.ReesesOptionStarMixin",
+		"accessor.ScreenAccessor",
+		"sodium.SodiumFavoriteClickMixin",
+		"sodium.SodiumOptionStarMixin",
+		"gui.TitleScreenMixin",
+		"accessor.VideoSettingsScreenAccessor"
+	]
+}
