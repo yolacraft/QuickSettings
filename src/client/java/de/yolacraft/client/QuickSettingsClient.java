@@ -10,6 +10,7 @@ public class QuickSettingsClient implements ClientModInitializer {
 
 		FavoriteManager.load();
 
+
 		ModKeybinds.register();
 		ClientTickEvents.END_CLIENT_TICK.register(client -> {
 			while (ModKeybinds.OPEN_QUICK_SETTINGS.consumeClick()) {
